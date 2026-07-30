@@ -26,7 +26,10 @@ I'm an IT Coordinator with hands-on experience in endpoint security monitoring, 
 
 |#|Room/Challenge|Platform|Category|Difficulty|Writeup|
 |-|-|-|-|-|-|
-|1|Room 404|TryHackMe (Byte Lotus)|Web / Git Exposure|Beginner|[View](./writeups/THM-Room404.md)|
+|1|Room 404|TryHackMe (Byte Lotus)|Web / Git Exposure|Beginner|[View](./writeups/THM-ByteLotusEvent-Room404.md)|
+|2|Complimentary|TryHackMe (Byte Lotus)|Web / IDOR via AWS DynamoDB Permissions|Beginner|[View](./writeups/THM-ByteLotusEvent-Complimentary.md)|
+|3|Corridor Challenge|TryHackMe|Web / IDOR|Beginner|[View](./writeups/THM-CorridorChallenge.md)|
+
 
 *More writeups added regularly as I progress through TryHackMe and other platforms.*
 
