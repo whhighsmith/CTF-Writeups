@@ -132,4 +132,4 @@ App loads → Cognito issues temporary credentials → Credentials intercepted i
 
 ---
 
-*Writeup by Will | TryHackMe: [your THM username]*
+*Writeup by Will | TryHackMe: willyh
