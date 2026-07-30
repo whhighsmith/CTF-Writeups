@@ -18,7 +18,7 @@ I'm an IT Coordinator with hands-on experience in endpoint security monitoring, 
 * **Password Cracking** — Hashcat, John the Ripper, wordlist attacks
 * **Reconnaissance** — Gobuster, Nmap, service enumeration
 * **Source Code Analysis** — git history analysis, credential hunting
-* **Linux Proficiency** — CLI navigation, file analysis, tool usage
+* **Linux Proficiency** — CLI navigation, file analysis, tool usage, md5sum
 
 \---
 
@@ -48,7 +48,8 @@ I'm an IT Coordinator with hands-on experience in endpoint security monitoring, 
 |John the Ripper|Password hash cracking|
 |GPG|Encryption and decryption|
 |Wireshark|Packet analysis|
-
+|AWS CLI|Authenticating with cloud credentials and querying DynamoDB|
+|Browser Dev Tools|	Intercepting network requests and extracting credentials|
 \---
 
 ## Certifications
