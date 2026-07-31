@@ -1,12 +1,8 @@
 # TryHackMe - Room 404 Writeup
 **Event:** Byte Lotus
-
 **Room:** Room 404
-
 **Difficulty:** Beginner
-
 **Tools Used:** Gobuster, git-dumper
-
 **Platform:** TryHackMe AttackBox 
 
 ---
