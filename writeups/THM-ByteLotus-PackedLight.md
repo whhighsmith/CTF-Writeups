@@ -30,6 +30,8 @@ I opened the capture file in **Wireshark** and ran an initial protocol analysis 
 
 The volume of plain text data being transferred over unencrypted HTTP was immediately suspicious and became the primary focus.
 
+<img width="1535" height="839" alt="Screenshot 2026-07-31 110852" src="https://github.com/user-attachments/assets/957b5f31-fcb8-493d-93a8-62c2dba60872" />
+
 ---
 
 ## Identifying the Primary Conversation
@@ -41,6 +43,8 @@ Via **Statistics → Conversations**, I identified the primary conversation of i
 | c0:56:27:cc:a7:9e | e8:9c:25:df:b2:51 | 1,144 | 489 KB |
 
 This conversation accounted for the vast majority of traffic and was clearly the focus of the investigation.
+
+<img width="1491" height="764" alt="Screenshot 2026-07-31 110914" src="https://github.com/user-attachments/assets/f45d911e-e77d-47aa-b632-12e566d3c190" />
 
 ---
 
@@ -54,6 +58,8 @@ http
 I identified an HTTP packet with a `Content-Type` of `text/x-python` — a non-standard content type that immediately raised a red flag. Right clicking the packet and selecting **Follow → HTTP Stream** revealed the full request and response.
 
 The server at `byte-lotus-hotel.thm:8080` had served a Python script located at `/temp/updates.py`.
+
+<img width="1918" height="1032" alt="Screenshot 2026-07-31 131457" src="https://github.com/user-attachments/assets/1616aee9-07f9-4c74-816b-a8289076f0d9" />
 
 ---
 
@@ -86,6 +92,9 @@ This technique is particularly stealthy because:
 - Each request only carries one character, making the data difficult to spot manually
 - The data appears to be a legitimate session token
 
+  <img width="1919" height="1032" alt="Screenshot 2026-07-31 131540" src="https://github.com/user-attachments/assets/67c4c96a-1213-43dc-acc3-5fe95eb86cdf" />
+
+
 ---
 
 ## Extracting the Exfiltrated Data
@@ -96,6 +105,8 @@ http.cookie contains "hotel_sess_state"
 ```
 
 This revealed a large stream of HTTP GET requests, each containing one encrypted and encoded keystroke in the cookie header.
+
+<img width="1919" height="1033" alt="Screenshot 2026-07-31 131300" src="https://github.com/user-attachments/assets/97127e25-534e-40c6-b274-1212f42f1829" />
 
 ---
 
@@ -145,6 +156,7 @@ print(''.join(keystrokes))
 ```python
 pcap_file = r"C:\Users\...\suspicious_http.pcapng"
 ```
+<img width="1919" height="1030" alt="Screenshot 2026-07-31 130842" src="https://github.com/user-attachments/assets/5c6b56cf-6e72-4e6c-bb0c-3448969a47cd" />
 
 ---
 
