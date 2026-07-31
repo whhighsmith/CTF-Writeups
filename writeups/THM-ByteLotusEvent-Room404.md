@@ -1,9 +1,9 @@
-TryHackMe - Room 404 Writeup
-Event: Byte Lotus  
-Room: Room 404  
-Difficulty: Beginner  
-Tools Used: Gobuster, git-dumper  
-Platform: TryHackMe AttackBox
+# TryHackMe - Room 404 Writeup
+**Event:** Byte Lotus  
+**Room:** Room 404  
+**Difficulty:** Beginner
+**Tools Used:** Gobuster, git-dumper 
+**Platform:** TryHackMe AttackBox 
 ---
 # Introduction:
 Room 404 is a beginner-friendly CTF challenge from the TryHackMe Byte Lotus event. The objective was to find a hidden flag on a web server running on port 8080. The core technique used was directory enumeration followed by source code dumping.
