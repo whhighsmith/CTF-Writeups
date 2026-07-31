@@ -1,4 +1,4 @@
-# TryHackMe - Covert Communication Channel Writeup
+# TryHackMe - Packed Light Writeup
 **Event:** Byte Lotus  
 **Difficulty:** Intermediate  
 **Tools Used:** Wireshark, PyCharm, Python (pyshark, base64)  
