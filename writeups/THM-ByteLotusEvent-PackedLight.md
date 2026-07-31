@@ -1,6 +1,6 @@
 # TryHackMe - Packed Light Writeup
 **Event:** Byte Lotus  
-**Difficulty:** Intermediate  
+**Difficulty:** Easy  
 **Tools Used:** Wireshark, PyCharm, Python (pyshark, base64)  
 **Platform:** Personal Machine + TryHackMe  
 
